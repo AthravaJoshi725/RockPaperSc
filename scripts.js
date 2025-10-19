@@ -134,3 +134,8 @@ scissorslabel.addEventListener('click', event =>{
 })
 
 
+fetch('https://api.countapi.xyz/hit/rock-paper-sc-one.vercel.app/visits')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('counter').textContent = data.value;
+  });
