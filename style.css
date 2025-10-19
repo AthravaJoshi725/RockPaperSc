@@ -1,0 +1,104 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+.navbox{
+
+    background-color: rgba(32, 32, 238, 0.664);
+    margin: 10px 0px;
+    text-align: center;
+}
+
+
+.ground{
+    position: relative;
+    top: 40px;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    /* border: 1px solid black; */
+    border-radius: 40px;
+    margin: 20px;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.square{
+    border: 2px solid rgba(32, 32, 238, 0.664);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.314);
+    border-radius: 40px;
+    width: 40%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+
+}
+
+#pcbox{
+    border: none;
+}
+
+.square:hover{
+    transform: scale(1.02);
+}
+
+
+.tags{
+    flex: 1;
+    font-size: 3em;
+    border: 1px solid rgba(0, 0, 0, 0.303);
+    width: 100%;
+    text-align: center;
+
+}
+
+.rocky{
+    border-radius: 40px 40px 0px 0px;
+}
+
+.scissory{
+    border-radius: 0px 0px 40px 40px;
+}
+
+#userbox .tags:hover {
+    background-color: rgba(32, 32, 238, 0.664);
+    color: white;
+    cursor: pointer;
+}
+
+.res{
+    /* border: 2px solid black; */
+    border: none;
+    position: relative;
+    top: 100px;
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.314);
+}
+
+#result{
+    text-align: center;
+    border: 1px solid blue;
+    align-self: center;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(32, 32, 238, 0.664);
+}
